@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
 import { useForm } from "react-hook-form";
 import { collection, addDoc } from "firebase/firestore";
-import { db } from "../firebase/data";
+import { db } from "./config/firebase";
 
 const Checkout = () => {
   const [pedidoId, setPedidoId] = useState("");
@@ -34,7 +34,7 @@ const Checkout = () => {
         <p>Tu número de pedido es: {pedidoId}</p>
       </div>
     );
-  }
+  
 
   return (
     <div className="container">
@@ -62,6 +62,6 @@ const Checkout = () => {
       </form>
     </div>
   );
-};
+};}
 
-export default Checkout;
+export default Checkout

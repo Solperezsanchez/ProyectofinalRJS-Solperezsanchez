@@ -1,4 +1,5 @@
-import { useForm } from "react-hook-form"
+import { useForm } from "react-hook-form";
+import LlamadaFirebase from "./llamadaFirebase/LlamadaFirebase";
 
 const Contacto = () => {
 
@@ -20,6 +21,8 @@ const Contacto = () => {
             <button className="enviar" type="submit">Enviar</button>
 
         </form>
+        <LlamadaFirebase/>
+
     </div>
   )
 }
